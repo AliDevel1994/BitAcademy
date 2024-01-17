@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Bit Acaddemy Sign Up </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<h4> Bit Academy Sign Up </h4>
+
+<p> Wat zijn je gegevens? </p>
+
+
+ <form action="sign_up.html"  method="get" >
+
+    <label for="fname" > Voornaam </label><br>
+    <input type="text" id="fname">  <br>
+
+    <label for="Lname" > Achternaam </label><br>
+    <input type="text" id="Lname">  <br>
+
+    <label for="email" > Email adres </label><br>
+    <input type="email" id="email">  
+
+    <label for="telenummer"> Telefoonnummer </label><br>
+    <input type="number" id="telenummer">  <br>
+
+    <label for="pincode" > Pincode </label><br>
+    <input type="password" id="pincode">  <br><br>
+
+    <p> Kies een Provincie </p>
+
+<select name="Provincie" id="Provincie-select">
+
+  <option value="kiesbare tekst">--Please choose an option--</option>
+  <option value="Gruningen">Groningen</option>
+  <option value="FRIESLAN">Friesland</option>
+  <option value="Hunebeddenland">Drenth</option>
+  <option value="Onderijssel">Overijssel</option>
+  <option value="Flexloland">Flevoland</option>
+  <option value="GelderDOME DOOF DOOF DOOF">Gelderland</option>
+  <option value="Utje">Utrecht</option>
+  <option value="NORD VPN">Noord-Holland</option>
+  <option value="From the South, yo">Zuid-Holland</option>
+  <option value="Oi em from Zeejderland">Zeeland</option>
+  <option value="BRABANT JONG">Brabant</option>
+  <option value="Limburragh">Limburg</option>
+
+</select>
+
+<P> Hou je van voetbal ?</p>
+
+    <input type="radio" id="Ja" name="drone" value="Ja" checked />
+    <label for="Ja">Ja</label><br>
+ 
+    <input type="radio" id="Nee" name="drone" value="Nee" />
+    <label for="Nee">Nee</label><br>
+
+    <input type="radio" id="Weet_ik_niet" name="drone" value="Weet ik niet" />
+    <label for="Weet_ik_niet">Weet ik niet</label><br><br>
+
+    <P> Favoriette dag(en) van de week? </p>
+
+        <input type="checkbox" id="Maandag" name="Maandag" checked />
+        <label for="Maandag">Maandag</label><br>
+      
+        <input type="checkbox" id="Dinsdag" name="Dinsdag" checked />
+        <label for="Dinsdag">Dinsdag</label><br>
+
+        <input type="checkbox" id="Woensdag" name="Woensdag" checked />
+        <label for="Woensdag">Woensdag</label><br>
+
+        <input type="checkbox" id="Donderdag" name="Donderdag" checked />
+        <label for="Donderdag">Donderdag</label><br>
+
+        <input type="checkbox" id="Vrijdag" name="Vrijdag" checked />
+        <label for="Vrijdag">Vrijdag</label><br>
+
+        <input type="checkbox" id="Zaterdag" name="Zaterdag" checked />
+        <label for="Zaterdag">Zaterdag</label><br>
+
+        <input type="checkbox" id="Zondag" name="Zondag" checked />
+        <label for="Zondag">Zondag</label>
+  
+        <p><label for="review">Laat een review achter!</label></p>
+  <textarea class="textarea" id="review" name="review" rows="4" cols="50" placeholder="Schrijf je review hier"></textarea>
+
+    <p> Klik op " Verzenden "  </p>
+
+    <input class="submit" type="submit"> 
+ </form>
+
+</body>
+
