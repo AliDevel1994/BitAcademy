@@ -1,83 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap hotel</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-<body>
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
 
-    <div class="container">
-        <h1>Vind de kamer die bij je past!</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-        <label for="inputLocation" class="form-label">Locatie:</label>
-        <input type="text" id="inputLocation" class="form-control" aria-describedby="inputLocationHelp">
-        <div id="inputLocationHelp" class="form-text"></div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Over Mij</a>
+            </li>
+          </ul>
+        </div>
 
-        <div class="row mb-3">
-            <div class="col">
-                <label for="inputVolwassenen" class="form-label">Aantal volwassenen:</label>
-                <input type="text" id="inputVolwassenen" class="form-control" aria-describedby="inputVolwassenenHelp">
-                <div id="inputVolwassenenHelp" class="form-text"></div>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Zoeken">
+          <button class="btn btn-outline-success" type="submit">Zoeken</button>
+        </form>
+
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Account
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Instellingen</a></li>
+                <li><a class="dropdown-item" href="#">Uitloggen</a></li>
+              </ul>
+            </li>
+          </ul>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img src="Programmeren.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Programmeren: een zee van mogelijkheden</h5>
+              <p class="card-text">Ontdek de mogelijkheden</p>
+              <a href="#" class="btn btn-primary">Lees meer</a>
             </div>
-            <div class="col">
-                <label for="inputKinderen" class="form-label">Aantal kinderen:</label>
-                <input type="text" id="inputKinderen" class="form-control" aria-describedby="inputKinderenHelp">
-                <div id="inputKinderenHelp" class="form-text"></div>
+          </div>
+
+          <div class="card mb-4">
+            <img src="Code.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Road to Fullstack Development</h5>
+              <p class="card-text">Front-End? Back-End? Verschil? Combinatie?</p>
+              <a href="#" class="btn btn-primary">Lees meer</a>
             </div>
+          </div>
         </div>
 
-        <div class="row mb-3">
-            <div class="col">
-                <label for="inputAankomstDatum" class="form-label">Aankomstdatum:</label>
-                <input type="date" id="inputAankomstDatum" class="form-control" aria-describedby="inputAankomstDatumHelp">
-                <div id="inputAankomstDatumHelp" class="form-text"></div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img src="mobileapps.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tips voor mobile-first development</h5>
+              <p class="card-text">Handige tips, tricks en linkjes</p>
+              <a href="#" class="btn btn-primary">Lees meer</a>
             </div>
-            <div class="col">
-                <label for="inputVertrekDatum" class="form-label">Vertrekdatum:</label>
-                <input type="date" id="inputVertrekDatum" class="form-control" aria-describedby="inputVertrekDatumHelp">
-                <div id="inputVertrekDatumHelp" class="form-text"></div>
+          </div>
+          <br>
+          <div class="card mb-4">
+            <img src="Nomad.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Live Like a Nomad</h5>
+              <p class="card-text">Nomad, Street Racer or Corpo?</p>
+              <a href="#" class="btn btn-primary">Lees meer</a>
             </div>
+          </div>
         </div>
 
-        <!-- Radio buttons voor aantal kamers -->
-        <label class="form-label">Aantal kamers:</label>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="aantalKamers" id="radio1" value="1">
-            <label class="form-check-label" for="radio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="aantalKamers" id="radio2" value="2">
-            <label class="form-check-label" for="radio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="aantalKamers" id="radio3" value="3">
-            <label class="form-check-label" for="radio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="aantalKamers" id="radio4" value="4">
-            <label class="form-check-label" for="radio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="aantalKamers" id="radio5" value="5">
-            <label class="form-check-label" for="radio5">5</label>
-        </div>
-
-        <br>
-
-        <label for="inputLocatieSlider" class="form-label">Locatie (landelijk naar stedelijk):</label>
-        <div class="d-flex align-items-center">
-        <span class="mr-2 me-2">Landelijk</span>
-        <input type="range" class="form-range flex-grow-1" min="0" max="100" id="inputLocatieSlider">
-        <span class="ml-2 ms-2">Stedelijk</span>
-        </div>
-
-        <br>
-        <br>
-        <button type="button" class="btn btn-primary">Zoek!</button>
+      </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
 </html>
