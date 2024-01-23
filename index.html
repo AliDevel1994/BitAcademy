@@ -1,90 +1,122 @@
-<!doctype html>
-<html lang="nl">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Navbar</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  </head>
-  <body>
+<!DOCTYPE html>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<html>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Over Mij</a>
-            </li>
-          </ul>
+<head>
+
+    <title> Jarvis  </title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="logo">
+
+            <img src="logo_white.png" alt="logo">
+
         </div>
 
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Zoeken">
-          <button class="btn btn-outline-success" type="submit">Zoeken</button>
-        </form>
+            <div class="onderdelen">
+                <h6>
+                <img src="home_icon.png" alt="home">Home
+                <img src="universe_icon.png" alt="universe">Universe
+                <img src="reviews_icon.png" alt="reviews">Reviews
 
-        <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Account
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Instellingen</a></li>
-                <li><a class="dropdown-item" href="#">Uitloggen</a></li>
-              </ul>
-            </li>
-          </ul>
-    </nav>
+                <span id="highlight">
 
-    <div class="container mt-4">
-      <div class="row">
+                <img src="feedback_icon.png" alt="growth">1:1's
 
-        <div class="col-md-6">
-          <div class="card mb-4">
-            <img src="Programmeren.PNG" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Programmeren: een zee van mogelijkheden</h5>
-              <p class="card-text">Ontdek de mogelijkheden</p>
-              <a href="#" class="btn btn-primary">Lees meer</a>
+                </span>
+
+                <img src="doelen_icon.png" alt="doelen">doelen
+                <img src="leaderboard_icon.png" alt="leaderboard">leaderboard
+                <img src="meer_icon.png" alt="meer">meer
+                </h6>
             </div>
-          </div>
 
-          <div class="card mb-4">
-            <img src="Code.PNG" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Road to Fullstack Development</h5>
-              <p class="card-text">Front-End? Back-End? Verschil? Combinatie?</p>
-              <a href="#" class="btn btn-primary">Lees meer</a>
-            </div>
-          </div>
-        </div>
+                <div class="personal">
 
-        <div class="col-md-6">
-          <div class="card mb-4">
-            <img src="mobileapps.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Tips voor mobile-first development</h5>
-              <p class="card-text">Handige tips, tricks en linkjes</p>
-              <a href="#" class="btn btn-primary">Lees meer</a>
-            </div>
-          </div>
-          <br>
-          <div class="card mb-4">
-            <img src="Nomad.PNG" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Live Like a Nomad</h5>
-              <p class="card-text">Nomad, Street Racer or Corpo?</p>
-              <a href="#" class="btn btn-primary">Lees meer</a>
-            </div>
-          </div>
-        </div>
+                    <div class="level">
+                    <div class="level_vullen"></div>
+                    <div class="level_tekst">
+                    Level 14 - 3%
+                </div>
 
-      </div>
+                </div>
+
+                    <div class="credits">
+
+                        3<img src="credits_icon.png" alt="credits">
+
+                    </div>
+
+                    <div class="profile">
+
+                        <img src="profile.png" alt="profile"><img src="meer_icon.png" alt="meer">
+
+                    </div>
+
+                </div>
+                </div>
+
+                    <div class="growth">
+                    <div class="groei">
+
+                        <h1>1:1's</h1>
+
+                            <table>
+
+                                <tr>
+                                    <th>Coach                   </th>
+                                    <th>Gecreëerd               </th>
+                                    <th>Voltooid                </th>
+                                    <th>Status                  </th>
+                                    <th>                        </th>
+                                </tr>
+
+                                <tr>
+                                    <td>Bob, de Coach           </td>
+                                    <td>26 minuten geleden      </td>
+                                    <td>                        </td>
+                                    <td>Bezig                   </td>
+                                    <td><button>Vul in</button> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bob, de Coach           </td>
+                                    <td>16 uur geleden          </td>
+                                    <td>                        </td>
+                                    <td>Wachten op Coach        </td>
+                                    <td>                        </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Mo, Hulpcoach           </td>
+                                    <td>60 dagen geleden        </td>
+                                    <td>42 dagen geleden        </td>
+                                    <td>Afgerond                </td>
+                                    <td><button>Bekijk</button> </td>
+                                </tr>
+
+                            </table>
+                    </div>
+
+                    <div class="groeiplaatje">
+
+                        <h3>Over 1:1's</h3>
+                            <br><br>
+                            <p> Om jouw groei in beeld te krijgen voer je samen met je coach 1-op-1 gesprekken.
+                            Tijdens een 1:1 gesprek bespreek je samen met je coach je huidige vaardigheden
+                            en kies je nieuwe vaardigheden uit om aan te
+                            werken. Zo zorgen we samen dat je groeit.</p>
+
+                                <img src="growth.png" alt="growth">
+
+                    </div>
     </div>
+</body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </body>
 </html>

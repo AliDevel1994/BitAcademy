@@ -1,21 +1,245 @@
-div {
-    width: 100px;
-    height: 100px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.green {
-    background-color: green;
-}
-.blue {
-    background-color: blue;
-}
-.red {
-    background-color: red;
+.nav {
+    display: flex;
+    color: white;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000462;
+    height: 6vh;
+    width: 100%;
+    font-size: 18px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0px 10px 0px 20px;
 }
 
-.white {
+body {
+    background-color: rgb(237, 238, 239);
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    height: 100vh;
+}
+
+#highlight {
     background-color: white;
+    color: rgb(86, 189, 141);
+    border-radius: 3px;
+    padding: 4px 3px;
+}
+
+.onderdelen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+
+.onderdelen item {
+    display: inline;
+}
+
+.onderdelen item:hover {
+    background-color: rgba(0, 0, 255, 0.466);
+
+}
+
+.onderdelen img {
+    position: relative;
+    top: 4px;
+    bottom: 5px;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+
+}
+
+.logo img {
+    height: 40px;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.level {
+    position: relative;
+    width: 200px;
+    height: 25px;
+    background: rgb(134, 218, 228);
+}
+
+.level_vullen {
+    position: relative;
+    right: 88px;
+    width: 10%;
+    height: 100%;
+    background: rgb(35, 150, 164);
+    border-radius: 8px;
+}
+
+.level_tekst {
+    position: absolute;
+    top: 15%;
+    right: 45px;
+    font: 18px sans-serif;
+    color: rgb(255, 255, 255);
+}
+.personal {
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    text-transform: capitalize;
+    bottom: 3px;
+}
+
+.personal > div {
+    position: relative;
+    right: 40px;
+    padding-right: 5px;
+}
+
+.personal img {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    align-items: center;
+}
+
+.profile {
+    position: relative;
+    bottom: 2px;
+    left: 0px;
+    padding-right: 7px;
+}
+
+.profile img {
+    border-radius: 50%;
+}
+
+.profile item {
+    position: relative;
+    left: 10px;
+}
+
+.credits img {
+    position: relative;
+    top: 8px;
+    left: 2px;
+}
+
+.credits {
+    position: relative;
+    left: 0px;
+    padding-right: 7px;
+    bottom: 10px;
+}
+
+table {
+    display: flex;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    text-align: left;
+    padding: 10px;
+    border-collapse: collapse;
+    margin: 5px;
+}
+
+th {
+    color: gray;
+    font-size: small;
+    width: 200px;
+    text-align: left;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+td {
+    border-bottom: solid 1px lightgray;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.growth {
+    display: flex;
+    height: 92vh;
+    width: 100%;
+    padding: 10px 15%;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.groei th {
+    position: relative;
+    left: 13px;
+}
+
+
+.groeiplaatje {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    height: 50vh;
+    width: 35vh;
+}
+
+.groeiplaatje > p {
+    position: relative;
+    bottom: 70px;
+    right: 25px;
+    transform: scale(0.7 , 0.7);
+}
+
+.groeiplaatje h1 {
+    position: relative;
+    bottom: 200px;
+    /* transform: scale(80%); */
+
+}
+
+.groeiplaatje img {
+    position: relative;
+    bottom: 130px;
+
+}
+
+.groeiplaatje h3 {
+    position: relative;
+    bottom: 10px;
 
 }
 
 
+button {
+    background-color: rgb(86, 189, 141);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 4px 12px;
+}
+
+.level {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7DCBD4;
+    border-radius: 10px;
+}
