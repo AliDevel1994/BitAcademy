@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ali Bootstrap Portfolio</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Connect</a>
+                </li>
+                <li class="nav-item">
+                    <form class="form-inline">
+                        <input class="form-control mr-2" type="search" placeholder="Zoek" aria-label="Search">
+                        <button class="btn btn-purple btn-sm" type="submit">Zoek</button>
+                    </form>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <span class="tt" data-bs-placement="left" title="Er zijn nieuwe posts">
+                            <i class="bi bi-bell-fill" style="color: black;"></i>
+                        </span>
+                        <span class="badge bg-danger rounded-pill">!</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!---Alert Screen-->
+<br>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    Je bent ingelogd!
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div class="alert alert-primary alert-dismissible fade show" role="alert">
+    Je bent ingelogd als Admin!
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+
+<!--- Image Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/background.png" class="w-100">
+            <div class="carousel-caption">
+                <h1 class="display-2">Bootstrap</h1>
+                <h3>Complete Website Layout</h3>
+                <button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button>
+                <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/background2.png" class="w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="img/background3.png" class="w-100">
+        </div>
+    </div>
+</div>
+
+
+<!--- Jumbotron -->
+<div class="container-fluid">
+	<div class="row jumbotron">
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+			<p class="lead">A web hosting service allows individuals and organizations to make their website accessible via the World Wide Web.</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+			<a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Web Hosting</button></a>
+		</div>
+
+	</div>
+</div>
+
+<!--- Welcome Section -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">
+				<i class="material-icons display-4">build</i> Build with
+        ease <i class="material-icons display-4">construction</i> </h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			<br>
+			<p class="lead"> Welcome to my new Bootstrap website! I am glad you are here.
+				This portfolio-website is a great starting point for any Bootstrap website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique alongside your own content, images, creativity and aquired skill progression.</p>
+			</p>
+			<br>
+			<p> This website is made with the following: </p>
+		</div>
+	</div>
+</div>
+<br>
+<!--- Three Column Section -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<br>
+			<i class="fas fa-code"></i>
+			<h3>HTML5</h3>
+			<p>Build with the latest version of HTML</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fas fa-bold"></i>
+			<h3>BOOTSTRAP</h3>
+			<p>Build with the latest version of Bootstrap </p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fab fa-css3"></i>
+			<h3>CSS3</h3>
+			<p>Build and Linked with the latest version of CSS</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fab fa-js"></i>
+			<h3>JAVASCRIPT</h3>
+			<p>Build, linked and minified with the latest version of JavaScript</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fab fa-node-js"></i>
+			<h3>NODE.JS</h3>
+			<p>In combination with Javascript </p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fas fa-file-code"></i>
+			<h3>JSON</h3>
+			<p>Used with the latest version of JSON</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fab fa-git"></i>
+			<h3>Git</h3>
+			<p>Repository Host</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fas fa-terminal"></i>
+			<h3>Command Line</h3>
+			<p>Using and Learning the right commands</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fas fa-desktop"></i>
+			<h3>IT Fundamentals</h3>
+			<p>Understanding, Expanding and Growing</p>
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+
+<!--- Welcome Section 2 -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h3 class="display-4">
+				<i class="fas fa-hourglass-start fa-xs "></i> Upcoming Skills
+				<i class="fas fa-hourglass-end fa-xs "></i>   </h3>
+		</div>
+		<hr>
+		<div class="col-12">
+			<br>
+			<p class="lead"> Coding is an important part of my life. I am always looking for new skills to learn. Never stop growing for the tech industry grows infinite and so should you.</p>
+			</p>
+			<br>
+			<p> Work, Learning and certification in progress: </p>
+		</div>
+	</div>
+</div>
+<br>
+<!--- Three Column Section -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<br>
+			<i class="fab fa-node-js"></i>
+			<h3>Typescript</h3>
+			<p>Static superset of JavaScript with type support.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fab fa-react"></i>
+			<h3>REACT</h3>
+			<p>JavaScript library for building user interfaces.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fas fa-database"></i>
+			<h3>MySQL</h3>
+			<p>Relational database system for data management.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fab fa-php"></i>
+			<h3>PHP</h3>
+			<p>Scripting language for server-side web development.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fab fa-python"></i>
+			<h3>Python</h3>
+			<p>General-purpose programming language for various applications.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fab fa-windows"></i>
+			<h3>C#</h3>
+			<p>Programming language designed for the Microsoft .NET platform.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fas fa-database"></i>
+			<h3>Databases</h3>
+			<p>Structured data storage systems.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fas fa-chart-bar"></i>
+			<h3>DataAnalytics</h3>
+			<p>Extracting insights from data.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fas fa-cogs"></i>
+			<h3>Prompt Engineering</h3>
+			<p>Iterative collaboration on prompt design for AI model training.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fas fa-code"></i>
+			<h3>API</h3>
+			<p>Interface for software communication.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fas fa-tasks"></i>
+			<h3>Scrum</h3>
+			<p>Agile framework for project management.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 p-4">
+			<i class="fas fa-briefcase"></i>
+			<h3>Business Case</h3>
+			<p>Document justifying a business decision or investment.</p>
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+
+<!--- Two Column Section -->
+<br>
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-lg-6">
+			<h2>If you build it ...</h2>
+			<br>
+			<p> The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+			<p>Resize the browser window to see the effect. Responsive web design has become more important as the amount of mobile traffic now accounts for more than half of total internet traffic.</p>
+			<p>It can also display multiple columns, stacked on top of each other</p>
+			<br>
+        <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Ha, Syke!">Lees meer</a>
+    </div>
+		<div class="col-lg-6">
+			<img src="img/desk.png" class="img-fluid">
+		</div>
+
+	</div>
+</div>
+
+<hr class="m-4">
+<!--- Fixed background -->
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+
+		</div>
+	</div>
+</figure>
+<br>
+<!--- Emoji Section -->
+<button class="fun" data-toggle="collapse" data-target="#emoji">Click for fun</button>
+<div id="emoji" class="collapse">
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-sm-6 col-md-3">
+				<img class="gif" src="img/gif/panda.gif">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img class="gif" src="img/gif/poo.gif">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img class="gif" src="img/gif/unicorn.gif">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img class="gif" src="img/gif/chicken.gif">
+			</div>
+		</div>
+
+	</div>
+</div>
+<!--- Meet the team -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+	  <div class="col-12">
+		<h1 class="display-4">
+		  <i class="fas fa-bolt mr-2"></i>
+		  Meet the team
+		  <i class="fas fa-bolt ml-2"></i>
+		</h1>
+	  </div>
+	</div>
+  </div>
+<!--- Cards -->
+<br>
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/team1.png">
+				<div class="card-body">
+					<h4 class="card-title">John Doe</h4>
+					<p class="card-text">John is an Internet expert. He loves solving problems and hopes to make the internet a better place.</p>
+					<a href="#" class="btn btn-outline-secondary">See profile</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/team2.png">
+				<div class="card-body">
+					<h4 class="card-title">Mary Jo</h4>
+					<p class="card-text">Mary is an Internet expert. She loves solving problems and hopes to make the internet a better place.</p>
+					<a href="#" class="btn btn-outline-secondary">See profile</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/team3.png">
+				<div class="card-body">
+					<h4 class="card-title">Phil Ho</h4>
+					<p class="card-text">Phil is an Internet expert. He loves solving problems and hopes to make the internet a better place.</p>
+					<a href="#" class="btn btn-outline-secondary">See profile</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<br>
+<br>
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-lg-6">
+			<span class="badge badge-danger" style="background-color: red; color: white;">New!</span>
+			<h2>Our Philosophy</h2>
+			<br>
+			<p> We believe that design is about more than just making something look good. It must also teach people how to think about themselves and their work. <strong>Everyone can make a difference in the world. <em>Everyone is unique.</em>  Every skill is unique.</strong></p>
+			<p> We believe in hard work, but work should also be fun, work should also be an comforting place to enter and exit.</p>
+			<p><em style="font-weight: normal;">" Motivation doesn't come of rewards, it comes of inner strength and solid mindset. "</em></p>
+			<p><u>We strive to design for people </u>, <strong> not for profit.</strong> </p>
+			<br>
+		</div>
+		<div class="col-lg-6">
+			<img src="img/bootstrap2.png" class="img-fluid">
+		</div>
+
+	</div>
+</div>
+<br>
+<br>
+<br>
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+	  <div class="col-12">
+		<h2 class="ml-4"><i class="far fa-star mr-2"></i><strong>Connect</strong> with me!</h2>
+		<img src="AliPF.png" class="mx-auto d-block" style="margin-left: -10px;" data-toggle="tooltip" data-placement="bottom" title="Yep, That's me!">
+		<p>I would like to thank you for your time visiting my website as an upcoming Junior Fullstack Developer.</p>
+		<p>I am looking forward to hear any feedback, open for critics, tips, advices, suggestions ... overall working with you!</p>
+		<p>Don't hesitate to contact me on my socials below!</p>
+		<p class="mb-5">If you have any questions for me: I will always strive to try answer them as soon as possible.</p>
+	  </div>
+	  <div class="col-12 social padding">
+		<a href="https://github.com/AliDevel1994/BitAcademy" data-toggle="tooltip" data-placement="bottom" title="GitHub"><i class="fab fa-github fa-4x"></i></a>
+		<a href="https://www.facebook.com/ali.firenzejackson/" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fab fa-facebook fa-4x"></i></a>
+		<a href="https://twitter.com/home" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fab fa-twitter fa-4x"></i></a>
+		<a href="https://support.google.com/answer/2451065?hl=en" data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i class="fab fa-google-plus-g fa-4x"></i></a>
+		<a href="https://www.instagram.com/accounts/login/" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fab fa-instagram fa-4x"></i></a>
+		<a href="https://www.youtube.com/" data-toggle="tooltip" data-placement="bottom" title="YouTube"><i class="fab fa-youtube fa-4x"></i></a>
+	  </div>
+	</div>
+  </div>
+
+<br>
+<br>
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+
+			<div class="col-md-4">
+				<img src="img/w3newbie.png">
+				<hr class="light">
+				<p>555-555-5555</p>
+				<p>5pP3O@example.com</p>
+				<p>100 Street Name</p>
+				<p>City, State, 00000</p>
+			</div>
+
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Our Hours</h5>
+				<hr class="light">
+				<p>Monday: 9am - 5pm</p>
+				<p>Saturday: 10am - 4pm</p>
+				<p>Sunday: Closed</p>
+			</div>
+
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Service Area</h5>
+				<hr class="light">
+				<p>City, State, 00000</p>
+				<p>City, State, 00000</p>
+				<p>City, State, 00000</p>
+				<p>City, State, 00000</p>
+			</div>
+			<div class="col-12">
+				<hr class="light">
+				<h5>&copy; Ali Chughtai - 2024</h5>
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+<script>
+	const tooltip = document.querySelectorAll('tt')
+      tooltips.forEach(t => {
+        new bootstrap.tooltip(t)
+      })
+</script>
+</body>
+</html>
